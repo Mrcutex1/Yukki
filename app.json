@@ -58,6 +58,16 @@
         "value": "",
         "required": false
       },
+        "TOKEN_ALLOW": {
+        "description": "Fill 'True' if you want to use Token data for play youtube songs, Fill 'False' to use cookies (song will play by cookies)",
+        "value": "False",
+        "required": false
+      },
+      "TOKEN_DATA": {
+        "description": "Fill here token data if you have otherwise ignore this and use cookies method for play youtube songs",
+        "value": "",
+        "required": false
+      },
       "HEROKU_APP_NAME": {
         "description": "Your heroku app/bot's name",
         "value": "",
@@ -93,7 +103,7 @@
       "formation": {
           "worker": {
               "quantity": 1,
-              "size": "free"
+              "size": "basic"
           }
       }
   }
